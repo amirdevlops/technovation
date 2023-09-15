@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Responsive Website in HTML CSS</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="../custom-scripts.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <!-- Header Start -->
+    <header>
+      <nav class="nav container">
+        <h2 class="nav_logo"><a href="#">Technovation</a></h2>
+
+        <ul class="menu_items">
+          <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+          <li><a href="#" class="nav_link">Home</a></li>
+          <li><a href="#" class="nav_link">About</a></li>
+          <li><a href="#" class="nav_link">Service</a></li>
+          <li><a href="#" class="nav_link">Project</a></li>
+          <li><a href="#" class="nav_link">Contact</a></li>
+        </ul>
+        <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Start -->
+    <section class="hero">
+      <div class="row container">
+        <div class="column">
+          <h2>National Engineer's Day <br /></h2>
+          <p> there's a brand-new club named Technovation. This group encourages PUSA students to showcase their latent
+            skills and talents. Furthermore, it motivates students to formulate innovative ideas.</p>
+          <div class="buttons">
+            <button class="btn">
+
+              <a href="https://www.youtube.com/watch?v=B3jHItsUOcA" target="_blank" class="btna">We're Live!</a>
+              <button  class="btn">Contact</button>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=TECHNOVATION.PUSA@GMAIL.COM" target="_blank">
+                </a>
+          </div>
+        <div class="column">
+          <iframe class="ifram" src="https://www.youtube.com/embed/B3jHItsUOcA" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          </div>
+        </div>
+    </section>
+    <!-- Hero End-->
+
+  </main>
+
+  <script>
+    const header = document.querySelector("header");
+    const menuToggler = document.querySelectorAll("#menu_toggle");
+
+    menuToggler.forEach(toggler => {
+      toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+    });
+  </script>
+</body>
+
+</html>
